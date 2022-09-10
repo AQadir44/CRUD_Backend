@@ -48,6 +48,7 @@ ACCESS_CONTROL_ALLOW_HEADERS = True
 CORS_ORIGIN_ALLOW_ALLL = True 
 CORS_ORIGIN_WHITELIST = (
     "http://localhost:4200" ,
+    "https://crud-frontend-dun.vercel.app/"
  )
 CORS_ALLOW_METHODS = (
     'DELETE',
@@ -97,8 +98,12 @@ WSGI_APPLICATION = 'django_angularapi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'crudapp',
+        'USER': 'root',
+        'PASSWORD': 'notallowed2468',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
