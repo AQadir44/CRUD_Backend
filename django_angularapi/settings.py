@@ -48,7 +48,7 @@ ACCESS_CONTROL_ALLOW_HEADERS = True
 CORS_ORIGIN_ALLOW_ALLL = True 
 CORS_ORIGIN_WHITELIST = (
     "http://localhost:4200" ,
-    "https://crud-frontend-dun.vercel.app/"
+    
  )
 CORS_ALLOW_METHODS = (
     'DELETE',
